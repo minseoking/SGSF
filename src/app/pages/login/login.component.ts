@@ -7,10 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  public loginParam = {
+    email: '',
+    password: ''
+  };
+
   constructor() { }
 
   ngOnInit() {
 
+  }
+
+  /**
+   * goLogin
+   * 로그인
+   */
+  goLogin() {
+    console.log('goLogin : ', this.loginParam);
   }
 
 }
