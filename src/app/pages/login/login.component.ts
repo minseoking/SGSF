@@ -24,6 +24,15 @@ export class LoginComponent implements OnInit {
    */
   goLogin() {
     console.log('goLogin : ', this.loginParam);
+    location.href = '/';
+  }
+
+  /**
+   * goSignin
+   * 회원가입
+   */
+  goSignin() {
+
   }
 
 }
