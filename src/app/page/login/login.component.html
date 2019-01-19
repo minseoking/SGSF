@@ -1,0 +1,15 @@
+<h3>LOGIN</h3>
+    <div class="loginform">
+      <img src="assets\login_logo.png">
+      <!-- <img src="assets\login\login_logo.png" width="300px" > -->
+      <br />
+
+      <input type="text" [(ngModel)]="userId" placeholder="아이디" *ngIf="!authService.isLogin">
+      <br />
+      {{validateUserID}}
+      <div *ngIf="idErrorMessage !=''" style="color:red">{{idErrorMessage}}</div>
+      <input type="text" [(ngModel)]="userPassword" placeholder="비밀번호" *ngIf="!authService.isLogin">
+      <br />{{message}}<br />
+      <button class="loginbtn" (click)="login()"  *ngIf="!authService.isLogin">로그인</button>
+      <!-- <button (click)="logout()" *ngIf="authService.isLogin">로그아웃</button> -->
+    </div>

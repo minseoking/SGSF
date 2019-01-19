@@ -1,0 +1,6 @@
+<p style="text-align:right">
+  <!-- default-top works! -->
+  <button (click)="login()"  *ngIf="!authService.isLogin">로그인</button>
+  <button (click)="logout()" *ngIf="authService.isLogin">로그아웃</button>
+  {{authService.isLogin}}
+</p>
