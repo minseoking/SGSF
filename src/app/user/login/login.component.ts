@@ -1,18 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LoginService } from '../../service/login/login.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  email: String = '';
+  password: String = '';
 
-  public loginParam = {
-    email: '',
-    password: ''
-  };
+  constructor(
+    private loginService: LoginService
+  ) {
 
-  constructor() { }
+  }
 
   ngOnInit() {
 
@@ -23,8 +26,12 @@ export class LoginComponent implements OnInit {
    * 로그인
    */
   goLogin() {
-    console.log('goLogin : ', this.loginParam);
-    location.href = '/';
+    console.log('loginParam : ', this.email, this.password);
+
+    this.loginService.login({
+      email: this.email,
+      password: this.password
+    });
   }
 
   /**
@@ -34,5 +41,4 @@ export class LoginComponent implements OnInit {
   goSignin() {
 
   }
-
 }
