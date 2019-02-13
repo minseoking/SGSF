@@ -5,10 +5,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { PagesRoutingModule } from './pages.routing';
 import { PagesComponent } from './pages.component';
+import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
-    PagesComponent
+    PagesComponent,
+    LoginComponent,
+    MainComponent
   ],
   imports: [
     CommonModule,
