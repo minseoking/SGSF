@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
+import { ShareModule } from './share/share.module';
 
 import { AppComponent } from './app.component';
 
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
 
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    ShareModule
   ],
   providers: [],
   bootstrap: [AppComponent]
