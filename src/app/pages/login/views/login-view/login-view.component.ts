@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-login-view',
+  templateUrl: './login-view.component.html',
+  styleUrls: ['./login-view.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginViewComponent implements OnInit {
+
   email: String = '';
   password: String = '';
 
@@ -33,4 +35,5 @@ export class LoginComponent implements OnInit {
   goSignin() {
 
   }
+
 }
