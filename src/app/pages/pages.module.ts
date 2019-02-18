@@ -5,21 +5,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { PagesRoutingModule } from './pages.routing';
 import { PagesComponent } from './pages.component';
-import { LoginComponent } from './login/login.component';
-import { MainComponent } from './main/main.component';
+import { LoginModule } from './login/login.module';
+
 
 @NgModule({
   declarations: [
-    PagesComponent,
-    LoginComponent,
-    MainComponent
+    PagesComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-
     PagesRoutingModule
   ]
 })

@@ -6,7 +6,7 @@ import { PagesComponent } from '../pages/pages.component';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: '/pages/login',
+        redirectTo: 'pages/login',
         pathMatch: 'full'
     },
     {
@@ -14,8 +14,8 @@ const routes: Routes = [
         component: PagesComponent,
         children: [
             {
-                path: '',
-                loadChildren: '../pages/login/login.module.ts#LoginModule'
+                path: 'login',
+                loadChildren: '../pages/login/login.module#LoginModule'
             }
         ]
     }

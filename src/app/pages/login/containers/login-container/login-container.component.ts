@@ -10,6 +10,8 @@ export class LoginContainerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
+  // private한 함수 및 메소드 생성하는 곳
 }

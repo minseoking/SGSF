@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginViewComponent implements OnInit {
 
-  email: String = '';
-  password: String = '';
-
   constructor(
 
   ) {
@@ -20,12 +17,14 @@ export class LoginViewComponent implements OnInit {
 
   }
 
+  // view에서 컨트롤하는 함수 만듬
+
   /**
    * goLogin
    * 로그인
    */
   goLogin() {
-    console.log('loginParam : ', this.email, this.password);
+
   }
 
   /**

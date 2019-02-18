@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+import { environment } from '../../../../environments/environment';
+
 export class ApiUrlService {
 
-  constructor() { }
+  /**
+   * PostsignIn
+   * 로그인
+   */
+  public PostsignIn: string = environment.basePath +
+    '';
 }

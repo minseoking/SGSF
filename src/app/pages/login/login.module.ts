@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 
 // containers
 import { LoginContainerComponent } from './containers/login-container/login-container.component';
-
 // views
 import { LoginViewComponent } from './views/login-view/login-view.component';
 
@@ -23,9 +22,6 @@ import { LoginViewComponent } from './views/login-view/login-view.component';
     declarations: [
         LoginContainerComponent,
         LoginViewComponent],
-    providers: [
-        // SignInService,
-        // ApiUrlService
-    ]
+    providers: []
 })
 export class LoginModule { }
